@@ -71,6 +71,15 @@
           else if(data.weather[0].main == "Mist"){ // Corrected capitalization of "Mist"
             weatherIcon.src = "images/mist.png";
           }
+          else if(data.weather[0].main == "Snow"){
+            weatherIcon.src = "images/snow.png";
+          }
+          else if(data.weather[0].main == "humid"){
+            weatherIcon.src = "images/humidity.png";
+          }
+          else if(data.weather[0].main == "windy"){
+              weatherIcon.src = "images/wind.png";
+          }
           
           document.querySelector(".Weather").style.display = "block"; // Show the weather information
           document.querySelector(".error").style.display = "none"; // Hide the error message
